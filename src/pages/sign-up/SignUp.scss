@@ -1,0 +1,126 @@
+.sign-up {
+    background: linear-gradient(180deg, #5835A1 0%, #B380F4 100%);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        width: 100vw;
+        display: flex;
+    }
+
+    &__heading {
+        text-align: center;
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .reg-form {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+        &__label {
+            margin-top: 21px;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__input {
+            height: 25px;
+            width: 208px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 25px;
+        }
+        
+        &__button {
+            &:hover {
+                background: #fff;
+                color: #A93DFF;
+            }
+
+            height: 38px;
+            width: 302px;
+            border-radius: 10px;
+            background: #A93DFF;
+            border-radius: 30px;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            align-self: center;
+        }
+
+        .file-input {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+
+
+            &__label {
+                width: 170px;
+                height: 25px;
+                margin-top: 14px;
+                color: #fff;
+                background: #9950F6;
+                align-self: center;
+            }
+            
+            &__image {
+                width: 92px;
+                height: 92px;
+                padding: 10px;
+                background: linear-gradient(180deg, #964EF3 0%, #FFFFFF 100%);
+                border-radius: 50%;
+            }
+
+        }
+
+        .load-photo {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .logo {
+        &:hover {
+            transition: all 1s ease;
+            transform: scale(0.95);
+        }
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+
+        &__image {
+            width: 67px;
+            height: 67px;
+        }
+
+        &__text {
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+}

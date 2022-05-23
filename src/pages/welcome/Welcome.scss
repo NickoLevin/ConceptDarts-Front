@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.welcome{
+    background: radial-gradient(50% 50% at 50% 50%, #CB89FF 0%, #5734A0 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+        margin-top: 57px;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 800;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__navigation {
+        margin-top: 57px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 144px;
+    }
+    &__nav-link {
+        &:hover{
+            background-color: #fff;
+            color: #A93DFF;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #A93DFF;
+        border-radius: 30px;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__text {
+        position: absolute;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+        font-weight: 700;
+    }
+    &__image {
+        border-radius: 50%;
+    }
+}

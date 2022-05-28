@@ -1,0 +1,150 @@
+.sign-in {
+    background: linear-gradient(180deg, #5835A1 0%, #B380F4 100%);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        width: 100vw;
+        display: flex;
+    }
+
+    &__heading {
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    &__content {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    &__first-link{
+        &:hover {
+            color: #5835A1;
+        }
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+    }
+
+    &__second-link {
+        &:hover {
+            color: #5835A1;
+            background-color: #fff;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 245px;
+        height: 38px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        background-color: #5835A1;
+        padding: 7px 14px;
+        border-radius: 30px;
+        text-decoration: none;
+        margin-left: 14px;
+    }
+
+    .login-form {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+        &__label {
+            margin-top: 21px;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__input {
+            height: 25px;
+            width: 208px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 25px;
+        }
+        
+        &__button {
+            &:hover {
+                background: #fff;
+                color: #A93DFF;
+            }
+
+            height: 38px;
+            width: 240px;
+            border-radius: 10px;
+            background: #A93DFF;
+            border-radius: 30px;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            align-self: center;
+        }
+
+        .forgot-password-link {
+            &:hover {
+                color: #5835A1;
+            }
+            margin-top: 8px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+        }
+    }
+
+    .logo {
+        &:hover {
+            transition: all 1s ease;
+            transform: scale(0.95);
+        }
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+
+        &__image {
+            width: 67px;
+            height: 67px;
+        }
+
+        &__text {
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+}
